@@ -2,6 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$main-color: white;
+
+html, body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: a3a3a3;
+}
+
+.navbar-collapse {
+  padding-left: 50px;
+}
 
 .img-responsive {
   background-repeat: no-repeat;
@@ -11,10 +24,81 @@
   width: 100%;
 }
 
+.dropdown-item {
+  color: #4a4a4a !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.nav-link {
+  margin-left: 5px !important;
+  margin-right: 15px !important;
+}
+
+.banner-padding {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.ca-gradient {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, red, white, white , red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red, white, white, red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, white, red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, red, white , white, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 1px 45px black !important;
+}
+
+.banner-text {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: $main-color;
+  font-size: 4em;
+  z-index: 4000;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 2em !important;
+}
+
+.nav-link {
+  font-size: 1.2em !important;
+  color: lightgray !important;
+}
+
 .img-logo {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 75px;
   width: 75px;
+}
+
+.header-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.gray-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .35) !important;
+}
+
+.text-shadow {
+  text-shadow: 0px 1px 6px black;
 }
