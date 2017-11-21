@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent banner-padding" style="z-index: 5050;">
   <a class="navbar-brand" href="#">
     <%= image_tag("logo.png", alt: 'SKYNETFC Logo', class: 'img-logo') %>
-    <span>
+    <span class="logo">
       SFU SKYNET FC
     </span>
   </a>
@@ -9,7 +9,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav" style="position: absolute; left: 35%; letter-spacing: 1px;">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           About Us
@@ -40,6 +40,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Contact Us</a>
       </li>
+      <li class="nav-item" style="margin-left: 25px;">
+        <button type="button nav-link" class="btn btn-warning" style="line-height: 29px;"> BECOME A SPONSOR </button>
+      </li>
     </ul>
     <ul class="navbar-nav" style="float: right; margin-left: auto;">
       <% if false %>
@@ -48,7 +51,7 @@
       </li>
       <% end %>
       <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/groups/SFURS/"> <i class="fa fa-facebook-official" style="font-size: 1.5em;" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="https://www.facebook.com/groups/SFURS/"> <i class="fa fa-facebook-official" style="font-size: 1.5em; color: #4267b2;" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
