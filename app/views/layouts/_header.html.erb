@@ -1,15 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent banner-padding" style="z-index: 5050;">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent special-padding" style="z-index: 5050; padding-top: 0px; padding-bottom: 0px;">
   <a class="navbar-brand" href="#">
     <%= image_tag("logo.png", alt: 'SKYNETFC Logo', class: 'img-logo') %>
     <span class="logo">
-      SFU SKYNET FC
+      SFU Skynet FC
     </span>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav" style="position: absolute; left: 35%; letter-spacing: 1px;">
+    <ul class="navbar-nav" style="">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           About Us
@@ -17,19 +17,10 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Mission Statement</a>
           <a class="dropdown-item" href="#">History</a>
-          <a class="dropdown-item" href="#">Join Us</a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Teams
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Firmware</a>
-          <a class="dropdown-item" href="#">Software</a>
-          <a class="dropdown-item" href="#">Electrical</a>
-          <a class="dropdown-item" href="#">Mechanical</a>
-        </div>
+        <a class="nav-link" href="#">Team</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Demos</a>
@@ -40,18 +31,14 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Contact Us</a>
       </li>
-      <li class="nav-item" style="margin-left: 25px;">
-        <button type="button nav-link" class="btn btn-warning" style="line-height: 29px;"> BECOME A SPONSOR </button>
+      <li class="nav-item">
+        <a class="nav-link fb" href="https://www.facebook.com/SFUSkynet/"> <i class="fa fa-facebook-official" style="font-size: 1.5em; " aria-hidden="true"></i><span class="sr-only">(current)</span></a>
       </li>
     </ul>
-    <ul class="navbar-nav" style="float: right; margin-left: auto;">
-      <% if false %>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.instagram.com/jumpingfitnessvic/"> <i class="fa fa-instagram" style="font-size: 1.7em;" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
-      </li>
-      <% end %>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/groups/SFURS/"> <i class="fa fa-facebook-official" style="font-size: 1.5em; color: #4267b2;" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav" style="margin-left: auto; float: right;">
+      <li class="nav-item" style="">
+        <button type="button nav-link" class="btn btn-basic" style="line-height: 29px;"> JOIN US </button>
+        <button type="button nav-link" class="btn btn-warning" style="line-height: 29px;"> BECOME A SPONSOR </button>
       </li>
     </ul>
   </div>

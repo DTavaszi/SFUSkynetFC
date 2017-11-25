@@ -10,8 +10,20 @@ $main-color: white;
 html, body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
-  background-color: #F7F7F7;
+  background-color: #ffffff;
   //background-image: url('/assets/pattern.png');
+}
+
+.bg-xp {
+  background-image: image-url("bg-xp.jpg") !important;
+  background-size: contain !important;
+  border-bottom: 1px solid #850000;
+}
+
+.btn-join {
+  background-color: #850000;
+  border-color: #850000;
+  color: white;
 }
 
 .gradient {
@@ -26,10 +38,13 @@ html, body {
   background: linear-gradient(to left, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.gradient-sponsor {
+  background: #850000; /* Old browsers */
+  }
+
 .main {
-  margin-top: -15px;
+  margin-top: 0px;
   background-color: white;
-  //background-image:url('/assets/global.jpg');
 }
 
 .navbar-collapse {
@@ -47,7 +62,13 @@ html, body {
 
 .sep {
  border-radius: 50%;
- box-shadow: 0 0 0 3px #77AFF1;
+ box-shadow: 0 0 0 3px #ffc107;
+ margin-top: -25px
+}
+
+.avatar {
+ border-radius: 50%;
+ box-shadow: 0 0 0 2px #850000;
  margin-top: -25px
 }
 
@@ -75,9 +96,38 @@ html, body {
   margin-right: 15px !important;
 }
 
-.banner-padding {
-  padding-left: 5%;
-  padding-right: 5%;
+@media only screen and (max-width: 1084px) {
+  .special-padding {
+    padding-left: 0%;
+    padding-right: 0%;
+    max-width: calc(1600px + 0%);
+    margin: 0 auto;
+  }
+
+  .header-banner {
+    max-height: 50vh;
+  }
+
+  .img-responsive {
+    max-height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 1085px) {
+  .special-padding {
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: calc(1600px + 10%);
+    margin: 0 auto;
+  }
+
+  .header-banner {
+    max-height: 75vh;
+  }
+
+  .img-responsive {
+    max-height: 75vh;
+  }
 }
 
 .ca-gradient {
@@ -108,7 +158,7 @@ html, body {
 }
 
 .nav-link {
-  font-size: 1.2em !important;
+  font-size: 1.0em !important;
   //text-decoration: underline !important;
   color: #222 !important;
 }
@@ -117,17 +167,13 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
 }
 
 .header-banner {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 75vh;
-  margin-top: 90px;
+  position: relative;
 }
 
 .gray-cover {
@@ -136,9 +182,22 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .35) !important;
+  //background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .text-shadow {
-  text-shadow: 0px 1px 6px black;
+  text-shadow: 0px 1px 5px black;
+}
+
+.fb {
+  color: rgb(66,103,178) !important;
+}
+
+.fb:hover {
+  color: rgb(46,83,158) !important;
+}
+
+.no-pl {
+  padding-left: 0px !important;
+  margin-left: 0px !important;
 }
