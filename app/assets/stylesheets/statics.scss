@@ -39,8 +39,8 @@ html, body {
 }
 
 .gradient-sponsor {
-  background: #850000; /* Old browsers */
-  }
+  background: #850000;
+}
 
 .main {
   margin-top: 0px;
@@ -201,3 +201,15 @@ html, body {
   padding-left: 0px !important;
   margin-left: 0px !important;
 }
+
+.new_contact_message {
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.gmap {
+  height: 525px;
+  width: 100%;
+}
+
+label.required:after{content:"*"}
