@@ -7,4 +7,7 @@ class StaticsController < ApplicationController
     @message = ContactMessage.new
   end
 
+  def about
+  end
+
 end

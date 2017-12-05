@@ -88,12 +88,32 @@ html, body {
 }
 
 .nav-link:hover {
-  color: #7C7B7B !important;
+  //color: #7C7B7B !important;
+  text-decoration: underline;
 }
 
 .nav-link {
   margin-left: 5px !important;
   margin-right: 15px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-btns {
+    margin-left: auto;
+    float: left;
+  }
+
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    padding-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-btns {
+    margin-left: auto;
+    float: right;
+  }
 }
 
 @media only screen and (max-width: 1084px) {
@@ -111,6 +131,12 @@ html, body {
   .img-responsive {
     max-height: 50vh;
   }
+
+  .arr-down {
+    font-size: 2em;
+    padding-left: 40%;
+    padding-top: 25px;
+  }
 }
 
 @media only screen and (min-width: 1085px) {
@@ -119,6 +145,11 @@ html, body {
     padding-right: 5%;
     max-width: calc(1600px + 10%);
     margin: 0 auto;
+  }
+
+  .arr-down {
+    font-size: 2em;
+    padding-left: 30%
   }
 
   .header-banner {
@@ -213,3 +244,16 @@ html, body {
 }
 
 label.required:after{content:"*"}
+
+.m1 {
+  background-image: image-url("m1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
