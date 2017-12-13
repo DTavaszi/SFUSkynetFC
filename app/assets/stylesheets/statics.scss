@@ -89,10 +89,11 @@ html, body {
 
 .nav-link:hover {
   //color: #7C7B7B !important;
-  text-decoration: underline;
+  //text-decoration: ;
 }
 
 .nav-link {
+
   margin-left: 5px !important;
   margin-right: 15px !important;
 }
@@ -185,21 +186,26 @@ html, body {
 
 .navbar-brand {
   color: white !important;
-  font-size: 2em !important;
+  font-size: 1.4em !important;
 }
 
 .nav-link {
   font-size: 1.0em !important;
-  //text-decoration: underline !important;
   color: #222 !important;
+}
+
+.navbar {
+  .nav-link {
+    letter-spacing: 1px;
+  }
 }
 
 .img-logo {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
 }
 
 .header-banner {
@@ -256,4 +262,17 @@ label.required:after{content:"*"}
 
 .disabled {
   cursor: not-allowed;
+}
+
+.bg-title {
+  position: absolute;
+  max-width: 800px;
+  font-family: 'din-22014', sans-serif;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+
+.mission {
+  top: 55vh;
+  right: 35vh;
 }
