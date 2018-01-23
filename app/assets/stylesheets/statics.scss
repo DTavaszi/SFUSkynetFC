@@ -276,14 +276,12 @@ label.required:after{content:"*"}
   top: 55vh;
   right: 35vh;
   text-shadow: 10px 1px 30px black;
-
-  h1 {
-    font-size: 3.75em;
-    font-weight: bold;
-  }
 }
 
-
+h1.about {
+  font-size: 3.75em;
+  font-weight: bold;
+}
 
 div.mission-statement {
     position: relative;
@@ -306,4 +304,58 @@ div.mission-statement {
       width: 100%;
       background-color: rgba(0, 0, 0, .5);
     }
+}
+
+div.milestones {
+
+  div.item {
+    height: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+
+    div.line {
+      position: absolute;
+      left: 50%;
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 33px;
+    }
+    div.inner {
+      position: absolute;
+      left: 50%;
+
+      .date {
+        padding-left: 20px;
+        display: inline-block;
+      }
+
+      .details {
+        padding-left: 50px;
+        font-size: 1.4em;
+        display: inline-block;
+      }
+
+      .date.reverse {
+        padding-left: 0;
+        padding-right: 20px;
+      }
+
+      .details.reverse {
+        padding-left: 0px;
+        padding-right: 50px;
+      }
+    }
+  }
+
+  .reverse {
+    transform: scale(-1, 1);
+  }
+
+  hr {
+    width: 50%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
 }

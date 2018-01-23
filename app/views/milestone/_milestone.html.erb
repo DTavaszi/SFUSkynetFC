@@ -1,0 +1,14 @@
+<%= content_tag :div, class: "item #{ reverse }" do %>
+  <%= content_tag :div, class: "line" do %>
+    -
+  <% end %>
+  <%= content_tag :div, class: "inner founded" do %>
+    <%= content_tag :div, class: "date #{ reverse }" do %>
+      <%= date %>
+    <% end %>
+
+    <%= content_tag :div, class: "details #{ reverse }" do %>
+      <%= details %>
+    <% end %>
+  <% end %>
+<% end %>
