@@ -260,22 +260,39 @@ label.required:after{content:"*"}
   width: 100%;
 }
 
+.team-img {
+  background-image: image-url("team.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
 .disabled {
   cursor: not-allowed;
 }
 
 .bg-title {
   position: absolute;
-  max-width: 800px;
+  //max-width: 800px;
   font-family: 'din-22014', sans-serif;
   text-shadow: 1px 1px 1px black;
   color: white;
 }
 
-.mission {
+.mission, .team >.about {
   top: 55vh;
   right: 35vh;
   text-shadow: 10px 1px 30px black;
+}
+
+.bg-title.team {
+  top: 20vh;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
 }
 
 div.about {
@@ -294,6 +311,16 @@ h1.about {
   font-size: 3.75em;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+h2.about {
+  font-size: 3.0em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+div.members {
+  margin-top: 50px;
 }
 
 div.mission-statement {
@@ -375,4 +402,46 @@ div.milestones {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
+}
+
+div.linkedin > a, div.email > a {
+  text-align: center;
+  color: #444;
+
+  i.fa-linkedin {
+    color: white;
+    padding: 0px 2px 0px 1px;
+    background-color: #0f77bb;
+  }
+}
+
+a.linkedin:hover {
+  text-decoration: none;
+}
+
+.row.members {
+  div.name, div.linkedin {
+    display: inline-block;
+  }
+}
+
+.member {
+  padding-top: 5px;
+  padding-bototm: 5px;
+}
+
+.exec {
+  div {
+    padding-bottom: 5px;
+  }
+}
+
+i.fa-chevron-down {
+  cursor: pointer;
+}
+
+i.fa-chevron-down:hover {
+  font-size: 1.1em;
+  text-shadow: 10px 1px 20px black;
+  transition: .2s;
 }

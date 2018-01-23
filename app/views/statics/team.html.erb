@@ -1,0 +1,109 @@
+<style>
+  .logo { color: white !important; text-shadow: 1px 1px 1px black; }
+  .nav-item > .nav-link { color: white !important; text-shadow: 1px 1px 1px black; }}
+</style>
+
+<div class="sp team-img" style="position: absolute; top: 0; border-bottom: 1px solid lightgray;">
+
+</div>
+<div style="height: 100vh;">
+  <div class="bg-title team">
+      <h1 class="about">
+        OUR TEAM
+      </h1>
+  </div>
+</div>
+
+<div class="container about">
+  <h1 class="about gradient color center">
+    Executives
+  </h1>
+
+<% execs = [
+  ["Arvin Amini", "President", "Second year", "Engineering sciences", "https://www.linkedin.com/in/arvin-amini", "arvina@sfu.ca"],
+  ["Amitis Haghdadi", "Vice-President Communication", "Second Year", "Engineering Sciences", "https://www.linkedin.com/in/amitis-haghdadi-397ba5140/", "ahaghdad@sfu.ca"],
+  ["George Michael Lertzman - Lepofosky", "Vice-President Administration", "Second Year", "Engineering Sciences", "https://www.linkedin.com/in/georgelertzmanlepofsky/", "gmlertzm@sfu.ca"],
+  ["Jordan Lei", "Vice-President Finance", "Second Year", "Engineering Sciences", "https://www.linkedin.com/in/jordanlei/", "jla522@sfu.ca"]] %>
+
+
+<div class="row">
+  <% execs.each do |exec| %>
+    <div class="col exec">
+      <div class="name"> <%= exec[0] %> </div>
+      <div class="title"> <%= exec[1] %> </div>
+      <div class="year"> <%= exec[2] %> </div>
+      <div class="major"> <%= exec[3] %> </div>
+      <div class="linkedin"><a class="linkedin" href="<%= exec[4] %>"><strong>Linked</strong><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
+      <div class="email"> <a href="<%= exec[5] %>"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+    </div>
+  <% end %>
+</div>
+
+<% electronics = [["Antonio Kim (leader)", "https://www.linkedin.com/in/antonio-kim/"],
+                  ["Arvin Amini",	"https://www.linkedin.com/in/arvin-amini"]] %>
+
+<% software = [["Dylan Reviczky (leader)", ""],
+                ["Damoon Tahmasbi", "https://www.linkedin.com/in/damoon-tahmasbi-67913042/"],
+                ["Daniel Tavaszi", "https://www.linkedin.com/in/daniel-tavaszi-72b40a4b/"],
+                ["Kasra Jamshidi", "https://www.linkedin.com/in/kasra-jamshidi-4765a6143/"],
+                ["Hamza Kamal", "https://www.linkedin.com/in/hamza-kamal-b261ab149/"],
+                ["Michael Chang", "https://www.linkedin.com/in/michael-chang-438349157/"],
+                ["Parmis Naddaf", "https://www.linkedin.com/in/parmis-naddaf-796b82130/"],
+                ["Scott Bernard", ""]] %>
+
+<% mechanics = [["Jordan Lei", "https://www.linkedin.com/in/jordanlei/"],
+                ["George Michael Lertzman - Lepofosky", "https://www.linkedin.com/in/georgelertzmanlepofsky/"],
+                ["Amitis Haghdadi",	"https://www.linkedin.com/in/amitis-haghdadi-397ba5140/"]] %>
+
+<div class="row members">
+  <div class="col">
+    <h2 class="about gradient color">
+      Electronics
+    </h2>
+
+    <% electronics.each do |member| %>
+      <div class="member">
+        <div class="name"> <%= member[0] %> </div>
+        <% if member[1].present? %>
+        &mdash; <div class="linkedin"><a class="linkedin" href="<%= member[2] %>"><strong>Linked</strong><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <div class="col">
+    <h2 class="about gradient color">
+      Software
+    </h2>
+
+    <% software.each do |member| %>
+      <div class="member">
+        <div class="name"> <%= member[0] %> </div>
+        <% if member[1].present? %>
+        &mdash; <div class="linkedin"><a class="linkedin" href="<%= member[2] %>"><strong>Linked</strong><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <div class="col">
+    <h2 class="about gradient color">
+      Mechanics
+    </h2>
+
+    <% electronics.each do |member| %>
+      <div class="member">
+        <div class="name"> <%= member[0] %> </div>
+        <% if member[1].present? %>
+        &mdash; <div class="linkedin"><a class="linkedin" href="<%= member[2] %>"><strong>Linked</strong><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+</div>

@@ -4,40 +4,39 @@
       <div class="col">
         <nav class="nav flex-column">
           <h5 style="font-weight: bold;"> About Us </h5>
-          <a class="nav-link active no-pl" href="#">Mission Statement</a>
-          <a class="nav-link no-pl" href="#">History</a>
+          <%= link_to "Our Mission", about_path, class: "nav-link active no-pl" %>
+          <%= link_to "Milestones", about_path + "#milestones", class: "nav-link active no-pl" %>
         </nav>
       </div>
 
       <div class="col">
         <nav class="nav flex-column">
           <h5 style="font-weight: bold;"> Teams</h5>
-          <a class="nav-link active no-pl" href="#">Firmware</a>
-          <a class="nav-link no-pl" href="#">Software</a>
+          <%= link_to "Our teams", team_path, class:"nav-link no-pl" %>
         </nav>
       </div>
 
       <div class="col">
         <nav class="nav flex-column">
           <h5 style="font-weight: bold;"> Demos </h5>
-          <a class="nav-link active no-pl" href="#">2017</a>
-          <a class="nav-link no-pl" href="#">2018</a>
+          <a class="nav-link active no-pl disabled" href="#">2017</a>
+          <a class="nav-link no-pl disabled" href="#">2018</a>
         </nav>
       </div>
 
       <div class="col">
         <nav class="nav flex-column">
           <h5 style="font-weight: bold;"> Sponsors </h5>
-          <a class="nav-link active no-pl" href="#">Become a sponsor</a>
-          <a class="nav-link no-pl" href="#">Current sponsors</a>
+          <a class="nav-link active no-pl disabled" href="#">Become a sponsor</a>
+          <a class="nav-link no-pl disabled" href="#">Current sponsors</a>
         </nav>
       </div>
 
       <div class="col">
         <nav class="nav flex-column">
           <h5 style="font-weight: bold;"> Contact Us </h5>
-          <a class="nav-link no-pl" href="#">Sign up</a>
-          <a class="nav-link no-pl" href="#">Send us an email</a>
+          <a class="nav-link no-pl" href="#" onclick="window.open('https://go.sfss.ca/clubs/721/join');">Sign up</a>
+          <%= link_to "Send us an email", contact_us_path, class: 'nav-link no-pl' %>
         </nav>
       </div>
     </div>

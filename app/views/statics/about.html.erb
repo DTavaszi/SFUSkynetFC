@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="arr-down">
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down" onclick="scrollToAnchor('#sfurobotsoccer');" aria-hidden="true"></i></a>
       </div>
   </div>
 </div>
@@ -41,7 +41,7 @@
 </div>
 
 <div class="container about">
-  <h1 class="about gradient color center">
+  <h1 id="sfurobotsoccer" class="about gradient color center">
     SFU Robot Soccer
   </h1>
 
@@ -65,3 +65,10 @@
 
 
 </div>
+
+<script>
+  function scrollToAnchor(aid){
+      aTag = $(aid);
+      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+  }
+</script>
