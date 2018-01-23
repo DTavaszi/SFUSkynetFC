@@ -278,8 +278,21 @@ label.required:after{content:"*"}
   text-shadow: 10px 1px 30px black;
 }
 
+div.about {
+  margin-bottom: 100px;
+
+    h1 {
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 1.4em;
+    }
+}
+
 h1.about {
   font-size: 3.75em;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -307,9 +320,12 @@ div.mission-statement {
 }
 
 div.milestones {
+  .bar {
+    z-index: 1;
+  }
 
   div.item {
-    height: 75px;
+    height: 90px;
     padding-top: 5px;
     padding-bottom: 5px;
     position: relative;
@@ -320,6 +336,7 @@ div.milestones {
       font-size: 2em;
       font-weight: bold;
       line-height: 33px;
+      z-index: 1;
     }
     div.inner {
       position: absolute;

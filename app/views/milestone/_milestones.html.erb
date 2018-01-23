@@ -1,5 +1,7 @@
-<div class="" style="height: 100%;">
-  <h1 class="about center"> MILESTONES </h1>
+<div class="container-fluid" style="height: 100%;">
+  <div class="container">
+    <h1 class="about center gradient"> MILESTONES </h1>
+  </div>
 
   </br>
   <div class="milestones" style="position: relative;">
@@ -9,27 +11,46 @@
     <div style="padding-top: 50px;">
     </div>
 
-    <%= render "milestone/milestone", date: "March 2017", details: "Founded", reverse: "" %>
-    <%= render "milestone/milestone", date: "May 2017", details: "First SFU Clubs Days", reverse: "reverse" %>
+    <% icon = "<i class='fa fa-flag' aria-hidden='true'></i>".html_safe %>
+    <%= render "milestone/milestone", date: "March 2017", details: "Founded", reverse: "", icon: icon %>
 
-    <%= render "milestone/milestone", date: "August 2017", details: "Received first sponsorship (Solidworks)", reverse: "" %>
-    <%= render "milestone/milestone", date: "October 2017", details: "Acquired first advisor (Sepehr MohaimenianPour)", reverse: "reverse" %>
+    <% icon = "<i class='fa fa-users' aria-hidden='true'></i>".html_safe %>
+    <%= render "milestone/milestone", date: "May 2017", details: "First SFU Clubs Days", reverse: "reverse", icon: icon %>
 
-    <%= render "milestone/milestone", date: "November 2017", details: "Set up GitLab", reverse: "" %>
+    <% icon = "<i class='fa fa-gift' aria-hidden='true'></i>".html_safe %>
+    <%= render "milestone/milestone", date: "August 2017", details: "Received first sponsorship (Solidworks)", reverse: "", icon: icon %>
+
+    <% icon = "<i class='fa fa-graduation-cap' aria-hidden='true'></i>".html_safe %>
+    <%= render "milestone/milestone", date: "October 2017", details: "Acquired first advisor (Sepehr MohaimenianPour)", reverse: "reverse", icon: icon %>
+
+    <% icon = "<i class='fa fa-gitlab' aria-hidden='true'></i>".html_safe %>
+    <%= render "milestone/milestone", date: "November 2017", details: "Set up GitLab", reverse: "", icon: icon %>
 
   <hr style="">
 
-  <%= render "milestone/milestone", date: "January 2018", details: "Set up website", reverse: "reverse" %>
-  <%= render "milestone/milestone", date: "February 2018", details: "Received second sponsorship (Altium)", reverse: "" %>
+  <% icon = "" %>
+  <%= render "milestone/milestone", date: "January 2018", details: "Set up website", reverse: "reverse", icon: icon %>
 
-  <%= render "milestone/milestone", date: "March 2018", details: "Build a functional SSL robot", reverse: "reverse" %>
-  <%= render "milestone/milestone", date: "April 2018", details: "Build a robot control framework", reverse: "" %>
+  <% icon = "" %>
+  <%= render "milestone/milestone", date: "February 2018", details: "Receive second sponsorship (Altium)", reverse: "", icon: icon %>
 
-  <%= render "milestone/milestone", date: "December 2018 ", details: "Acquired permanent workspace on campus", reverse: "reverse" %>
-  <%= render "milestone/milestone", date: "August 2019", details: "Build a team of SSL robots", reverse: "" %>
+  <% icon = "<i class='fa fa-android' aria-hidden='true'></i>".html_safe %>
+  <%= render "milestone/milestone", date: "March 2018", details: "Build a functional SSL robot", reverse: "reverse", icon: icon %>
 
-  <%= render "milestone/milestone", date: "February 2020 ", details: "Compete against UBC thunderbots", reverse: "reverse" %>
-  <%= render "milestone/milestone", date: "July 2020", details: "Compete in the international SSL championship", reverse: "" %>
+  <% icon = "<i class='fa fa-gamepad' aria-hidden='true'></i>".html_safe %>
+  <%= render "milestone/milestone", date: "April 2018", details: "Build a robot control framework", reverse: "", icon: icon %>
+
+  <% icon = "<i class='fa fa-building' aria-hidden='true'></i>".html_safe %>
+  <%= render "milestone/milestone", date: "December 2018 ", details: "Acquire permanent workspace on campus", reverse: "reverse", icon: icon %>
+
+  <% icon = "" %>
+  <%= render "milestone/milestone", date: "August 2019", details: "Build a team of SSL robots", reverse: "", icon: icon %>
+
+  <% icon = "" %>
+  <%= render "milestone/milestone", date: "February 2020 ", details: "Compete against UBC thunderbots", reverse: "reverse", icon: icon %>
+
+  <% icon = "<i class='fa fa-globe' aria-hidden='true'></i>".html_safe %>
+  <%= render "milestone/milestone", date: "July 2020", details: "Compete in the international SSL championship", reverse: "", icon: icon %>
 
   <div style="padding-bottom: 50px;">
   </div>
