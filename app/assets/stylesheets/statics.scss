@@ -150,7 +150,7 @@ html, body {
 
   .arr-down {
     font-size: 2em;
-    padding-left: 30%
+    padding-left: 47%
   }
 
   .header-banner {
@@ -252,7 +252,7 @@ html, body {
 label.required:after{content:"*"}
 
 .m1 {
-  background-image: image-url("m1.png");
+  background-image: image-url("m1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -275,4 +275,35 @@ label.required:after{content:"*"}
 .mission {
   top: 55vh;
   right: 35vh;
+  text-shadow: 10px 1px 30px black;
+
+  h1 {
+    font-size: 3.75em;
+    font-weight: bold;
+  }
+}
+
+
+
+div.mission-statement {
+    position: relative;
+
+    p {
+      position: relative;
+      padding: 0 5px 0 5px;
+      z-index: 5050;
+
+      font-size: 1.6em;
+      display: inline-block;
+      width: 100%;
+      margin: 1px;
+    }
+
+    .cover {
+      top: 0;
+      position: absolute;
+      height: 35px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .5);
+    }
 }

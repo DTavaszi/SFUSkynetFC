@@ -60,29 +60,32 @@
       Our team consists of students from various academic and cultural backgrounds.
     </h5>
 
-    <div class="container">
-      <div class="row" style="margin: 10px auto; max-width: 700px">
-        <% (0..15).each do %>
-          <div style="height: 30px; width: 30px; border-radius: 50%; margin: 0 auto;">
-            <%= image_tag("sep.jpg", alt: 'Sepehr Mohaimanian', class: 'img-responsive avatar') %>
-          </div>
-        <% end %>
+    <% if false %>
+      <div class="container">
+        <div class="row" style="margin: 10px auto; max-width: 700px">
+          <% (0..15).each do %>
+            <div style="height: 30px; width: 30px; border-radius: 50%; margin: 0 auto;">
+              <%= image_tag("sep.jpg", alt: 'Sepehr Mohaimanian', class: 'img-responsive avatar') %>
+            </div>
+          <% end %>
+        </div>
+        <div class="row" style="margin: 10px auto; max-width: 600px">
+          <% (0..12).each do %>
+            <div style="height: 30px; width: 30px; border-radius: 50%; margin: 0 auto;">
+              <%= image_tag("sep.jpg", alt: 'Sepehr Mohaimanian', class: 'img-responsive avatar') %>
+            </div>
+          <% end %>
+        </div>
+        <div class="row" style="margin: 0 auto; max-width: 500px">
+          <% (0..10).each do %>
+            <div style="height: 30px; width: 30px; border-radius: 50%; margin: 0 auto;">
+              <%= image_tag("sep.jpg", alt: 'Sepehr Mohaimanian', class: 'img-responsive avatar') %>
+            </div>
+          <% end %>
+        </div>
       </div>
-      <div class="row" style="margin: 10px auto; max-width: 600px">
-        <% (0..12).each do %>
-          <div style="height: 30px; width: 30px; border-radius: 50%; margin: 0 auto;">
-            <%= image_tag("sep.jpg", alt: 'Sepehr Mohaimanian', class: 'img-responsive avatar') %>
-          </div>
-        <% end %>
-      </div>
-      <div class="row" style="margin: 0 auto; max-width: 500px">
-        <% (0..10).each do %>
-          <div style="height: 30px; width: 30px; border-radius: 50%; margin: 0 auto;">
-            <%= image_tag("sep.jpg", alt: 'Sepehr Mohaimanian', class: 'img-responsive avatar') %>
-          </div>
-        <% end %>
-      </div>
-    </div>
+    <% end %>
+
   </div>
 </div>
 <div class="special-padding">
